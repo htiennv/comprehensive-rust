@@ -8,27 +8,27 @@ struct User {
 
 impl User {
     pub fn new(name: String, age: u32, weight: f32) -> Self {
-        unimplemented!();
+        Self { name, age, weight }
     }
 
     pub fn name(&self) -> &str {
-        unimplemented!();
+        self.name.as_str()
     }
 
     pub fn age(&self) -> u32 {
-        unimplemented!();
+        self.age
     }
 
     pub fn weight(&self) -> f32 {
-        unimplemented!();
+        self.weight
     }
 
     pub fn set_age(&mut self, age: u32) {
-        unimplemented!();
+        self.age = age;
     }
 
     pub fn set_weight(&mut self, weight: f32) {
-        unimplemented!();
+        self.weight = weight;
     }
 }
 
@@ -40,7 +40,17 @@ fn main() {
 }
 
 #[test]
-fn test_weight() {}
+fn test_weight() {
+    let bob = User::new(String::from("Bob"), 30, 71.1);
+    assert_eq!(bob.weight(), 71.1);
+}
 
 #[test]
-fn test_age() {}
+fn test_set_age() {
+    let mut bob = User::new(String::from("Bob"), 30, 71.1);
+    assert_eq!(bob.age(), 30);
+
+    bob.set_age(29);
+
+    assert_eq!(bob.age(), 29);
+}
