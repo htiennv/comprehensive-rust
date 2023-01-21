@@ -11,7 +11,10 @@ struct Library {
 
 impl Book {
     fn new(title: &str, year: i16) -> Book {
-        Book { title: String::from(title), year }
+        Book {
+            title: String::from(title),
+            year,
+        }
     }
 }
 
@@ -64,7 +67,7 @@ fn main() {
 
     match library.oldest_book() {
         Some(book) => println!("My oldest book is {}", book),
-        None => println!("My lirary is empty"), 
+        None => println!("My lirary is empty"),
     }
 
     println!("Nuber books on library: {}", library.len());
