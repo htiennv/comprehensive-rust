@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "arrays-for-loops",
+    "design-a-library",
+]
