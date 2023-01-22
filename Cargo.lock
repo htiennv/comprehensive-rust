@@ -7,6 +7,10 @@ name = "arrays-for-loops"
 version = "0.1.0"
 
 [[package]]
+name = "concurrent"
+version = "0.1.0"
+
+[[package]]
 name = "design-a-library"
 version = "0.1.0"
 
