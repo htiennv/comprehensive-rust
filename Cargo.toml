@@ -3,4 +3,5 @@ members = [
     "arrays-for-loops",
     "design-a-library",
     "health-statistics",
+    "luhn",
 ]
