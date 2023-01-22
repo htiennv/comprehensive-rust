@@ -19,5 +19,9 @@ name = "luhn"
 version = "0.1.0"
 
 [[package]]
+name = "simple-gui"
+version = "0.1.0"
+
+[[package]]
 name = "strings-and-iterators"
 version = "0.1.0"
