@@ -17,3 +17,7 @@ version = "0.1.0"
 [[package]]
 name = "luhn"
 version = "0.1.0"
+
+[[package]]
+name = "strings-and-iterators"
+version = "0.1.0"

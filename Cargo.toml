@@ -4,4 +4,5 @@ members = [
     "design-a-library",
     "health-statistics",
     "luhn",
+    "strings-and-iterators",
 ]
