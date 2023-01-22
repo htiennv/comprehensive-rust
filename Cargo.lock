@@ -29,3 +29,7 @@ version = "0.1.0"
 [[package]]
 name = "strings-and-iterators"
 version = "0.1.0"
+
+[[package]]
+name = "webserver"
+version = "0.1.0"
